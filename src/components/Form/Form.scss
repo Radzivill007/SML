@@ -1,0 +1,50 @@
+.form {
+  max-width: 400px;
+  & .title {
+    color: #797979;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  & .types {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  & .tax {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 35px;
+    margin: 15px 0;
+    & span {
+      font-size: 12px;
+      transition: color 0.5s;
+      &.gray {
+        color: #c0c0c0;
+      }
+    }
+  }
+
+  & .wages {
+    padding-left: 35px;
+    & input {
+      border: 1px solid black;
+      border-radius: 40px;
+      max-width: 170px;
+      padding-left: 10px;
+      &:focus {
+        border: 1px solid black;
+      }
+    }
+    & span {
+      display: inline-block;
+      margin-left: 15px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+}
